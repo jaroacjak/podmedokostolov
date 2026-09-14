@@ -53,6 +53,26 @@
       font-size: 14px;
     }
 
+    .refresh-btn {
+      margin-top: 24px;
+      padding: 13px 24px;
+      border: none;
+      border-radius: 8px;
+      background: #6d5a42;
+      color: white;
+      font-size: 16px;
+      cursor: pointer;
+    }
+
+    .refresh-btn:hover {
+      background: #51422f;
+    }
+
+    .refresh-btn:focus-visible {
+      outline: 3px solid #b8a58b;
+      outline-offset: 3px;
+    }
+
     footer {
       margin-top: 48px;
       font-size: 13px;
@@ -74,10 +94,15 @@
 
     <div class="status">Čoskoro budeme späť</div>
 
+    <br>
+
+    <button class="refresh-btn" onclick="location.reload()">
+      ↻ Obnoviť stránku
+    </button>
+
     <footer>
       Ďakujeme za pochopenie.
     </footer>
   </main>
 </body>
 </html>
-
